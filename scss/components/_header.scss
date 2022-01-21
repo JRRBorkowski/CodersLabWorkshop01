@@ -1,0 +1,64 @@
+.navbar {
+  position: sticky;
+  height: 70px;
+  box-shadow: 0 3px 6px #00000029;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //height: 100%;
+  }
+
+  .navbar-logo {
+    padding-left: 136px;
+    font: normal normal 300 32px/37px Raleway;
+    color: $color-main;
+    @include phone {
+      padding-left: 0;
+    }
+  }
+
+  .navbar-links {
+    @include phone {
+      display: none;
+    }
+    a {
+      font: normal normal bold 11px/15px Open Sans;
+      text-decoration: none;
+      color: #A5A5A5;
+      text-align: center;
+      letter-spacing: 3.28px;
+      text-transform: uppercase;
+      padding: 28px 18px 22px;
+
+      &:hover {
+        border-bottom: 4px solid #08A6E4;
+        color: #000000;
+      }
+
+      &:active {
+        border-bottom: 4px solid #08A6E4;
+        color: #000000;
+      }
+    }
+  }
+
+  .navbar-links-list {
+    display: flex;
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    li {
+      padding: 0 26px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+
+
+
+

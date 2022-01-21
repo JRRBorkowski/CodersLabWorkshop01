@@ -1,0 +1,11 @@
+$phone-width: 780px;
+$desktop-width: 1440px;
+
+$tablet-start: $phone-width;
+
+
+@mixin phone {
+  @media screen and (max-width: $tablet-start) {
+    @content;
+  }
+}

@@ -1,0 +1,35 @@
+.banner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: #fff url("../images/Background.png") no-repeat bottom/contain;
+  height: 712px;
+  padding-top: 130px;
+}
+
+.banner h1 {
+  font: normal normal normal 49px/57px Raleway;
+  color: black;
+  padding: 20px;
+}
+
+.banner p {
+  text-align: center;
+  font: normal normal normal 16px/22px Open Sans;
+  color: black;
+  padding-bottom: 38px;
+
+  @include phone {
+    font: normal normal normal 16px/22px Open Sans;
+  }
+}
+
+.banner a {
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  background: #08A6E4 0% 0% no-repeat padding-box;
+  box-shadow: 5px 10px 14px #07ACE629;
+  padding: 22px 157px;
+  font: normal normal bold 16px/22px Open Sans;
+}
