@@ -10,39 +10,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <div class="navbar-logo">
-                BestShop
-            </div>
-            <nav class="navbar-links">
+<header class="navbar">
+    <div class="container">
+        <div class="navbar-logo">
+            BestShop
+        </div>
+        <input type="checkbox" name="menu-btn" class="header__menu-btn fa-solid fa-bars"/>
+        <nav class="navbar-links">
             <ul class="navbar-links-list">
                 <li><a href="#">Why us</a></li>
                 <li><a href="#">Benefits</a></li>
                 <li><a href="#">Prices</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            </nav>
-        </div>
-    </header>        <div class="container">
+        </nav>
+    </div>
+</header>
+<div class="container">
     <section class="banner">
 
         <h1>Sell more!</h1>
         <p>Open your shop on our platform and increase your sales</p>
         <a href="#">Open your shop</a>
 
-    </section>        </div>
+    </section>
+</div>
 <main>
 
-        <section class="statistics">
-            <div class="container">
+    <section class="statistics">
+        <div class="container">
             <h2>The most popular sales platform in country</h2>
             <div class="statistics-items">
                 <div class="statistics-items-item">
                     <div class="statistics-items-person">
-                    <img src="images/Person.svg" class="statistics-items-img">
+                        <img src="images/Person.svg" class="statistics-items-img">
                     </div>
                     <h2>100000+</h2>
                     <p>daily entries</p>
@@ -62,28 +68,96 @@
                     <p>added posts dailys</p>
                 </div>
             </div>
-            </div>
-        </section>
-        <section class="articles">
-            <div class="container">
+        </div>
+    </section>
+    <section class="articles">
+        <div class="container">
             <article>
                 <div class="articles-text">
                     <h2>Hello</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="image-square">
-                <img src="images/Macbook.png">
+                    <img src="images/Macbook.png">
                 </div>
             </article>
             <article>
             </article>
             <article>
             </article>
-            </div>
-        </section>
+        </div>
+    </section>
     <section class="prices">
         <div class="container">
 
+        </div>
+    </section>
+    <section class="calc">
+        <h2>Calculate how much you’ll pay</h2>
+
+        <div class="calc__columns">
+            <form class="calc__form">
+                <div class="calc__input">
+                    <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
+                </div>
+                <div class="calc__input">
+                    <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+                </div>
+                <div class="calc__select" id="package" data-value="">
+                    <div class="select__input">
+                        Choose package
+                    </div>
+
+                    <ul class="select__dropdown">
+                        <li data-value="basic">Basic</li>
+                        <li data-value="professional">Professional</li>
+                        <li data-value="premium">Premium</li>
+                    </ul>
+                </div>
+                <label class="form__checkbox">
+                    <input type="checkbox" id="accounting"/>
+                    <span class="checkbox"></span>
+                    <p class="consent__text">Accounting</p>
+                </label>
+                <label class="form__checkbox">
+                    <input type="checkbox" id="terminal"/>
+                    <span class="checkbox"></span>
+                    <p class="consent__text">Rental of a payment terminal</p>
+                </label>
+            </form>
+
+            <div class="calc__summary">
+                <ul>
+                    <li class="list__item" data-id="products">
+                        <span class="item__type">Products</span>
+                        <span class="item__calc">20 * $0.5</span>
+                        <span class="item__price">$10</span>
+                    </li>
+                    <li class="list__item" data-id="orders">
+                        <span class="item__type">Orders</span>
+                        <span class="item__calc">20 * $0.5</span>
+                        <span class="item__price">$10</span>
+                    </li>
+                    <li class="list__item" data-id="package">
+                        <span class="item__type">Package</span>
+                        <span class="item__calc">Premium</span>
+                        <span class="item__price">$10</span>
+                    </li>
+                    <li class="list__item" data-id="accounting">
+                        <span class="item__type">Accounting</span>
+                        <span class="item__price">$10</span>
+                    </li>
+                    <li class="list__item" data-id="terminal">
+                        <span class="item__type">Terminal</span>
+                        <span class="item__price">$10</span>
+                    </li>
+                </ul>
+                <div class="summary__total" id="total-price">
+                    <span>Total</span>
+                    <span class="total__price">$700</span>
+                </div>
+            </div>
         </div>
     </section>
 

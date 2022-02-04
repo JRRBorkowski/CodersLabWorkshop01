@@ -9,3 +9,9 @@ $tablet-start: $phone-width;
     @content;
   }
 }
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-start) {
+    @content;
+  }
+}

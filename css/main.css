@@ -75,6 +75,26 @@ table {
     padding-left: 0;
   }
 }
+.navbar .header__menu-btn {
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  .navbar .header__menu-btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    padding: 25px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: white;
+  }
+  .navbar .header__menu-btn::before {
+    color: #08A6E4;
+    font-size: 2em;
+  }
+}
 @media screen and (max-width: 780px) {
   .navbar .navbar-links {
     display: none;
@@ -87,7 +107,7 @@ table {
   text-align: center;
   letter-spacing: 3.28px;
   text-transform: uppercase;
-  padding: 28px 18px 22px;
+  padding: 27px 3px;
 }
 .navbar .navbar-links a:hover {
   border-bottom: 4px solid #08A6E4;
@@ -117,7 +137,6 @@ table {
   height: 712px;
   padding-top: 130px;
 }
-
 .banner h1 {
   font: normal normal normal 49px/57px Raleway;
   color: black;
@@ -129,11 +148,6 @@ table {
   font: normal normal normal 16px/22px Open Sans;
   color: black;
   padding-bottom: 38px;
-}
-@media screen and (max-width: 780px) {
-  .banner p {
-    font: normal normal normal 16px/22px Open Sans;
-  }
 }
 
 .banner a {

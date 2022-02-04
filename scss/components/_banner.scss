@@ -5,6 +5,10 @@
   background: #fff url("../images/Background.png") no-repeat bottom/contain;
   height: 712px;
   padding-top: 130px;
+
+  @include phone {
+    //background-size:  cover;
+  }
 }
 
 .banner h1 {
@@ -19,9 +23,6 @@
   color: black;
   padding-bottom: 38px;
 
-  @include phone {
-    font: normal normal normal 16px/22px Open Sans;
-  }
 }
 
 .banner a {
